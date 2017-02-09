@@ -83,6 +83,16 @@ function dm_content_width() {
 }
 add_action( 'after_setup_theme', 'dm_content_width', 0 );
 
+
+/**
+ * Add a shortcode for the current theme directory
+ * @return string Current theme directory
+ */
+function dm_get_theme_directory_uri() {
+    return get_template_directory_uri();
+}
+add_shortcode( 'themeuri', 'dm_get_theme_directory_uri' );
+
 /**
  * Register widget area.
  *
