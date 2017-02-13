@@ -30,7 +30,7 @@
 				<i class="fa fa-twitter footer-icon"></i>
 				<i class="fa fa-youtube footer-icon"></i>
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 right-footer">
 				<h5 class="footer-heading"><b>D&amp;M Enterprise Group</b></h5>
 				<span id="address">
 				88 West Front Street, Keyport,<br/>
@@ -54,14 +54,18 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	
-	$('.carousel').carousel({
+	$('#testimonial-carousel').carousel({
+  		interval: 100000000
+	});
+
+	$('#supplier-carousel').carousel({
   		interval: 100000000
 	});
 
 	var screen_width = $(window).width(); 
 	
 	if($(window).width() >= 768){
-		$('.carousel .item').each(function(){
+		$('#testimonial-carousel .item').each(function(){
 		  var next = $(this).next();
 		  if (!next.length) {
 		    next = $(this).siblings(':first');
@@ -96,33 +100,65 @@
 	 //  }
 	  screen_width = $(window).width();
 	  setCarouselHeight('#testimonial-carousel');
+	  // setCarouselHeight('#supplier-carousel');
 	});
 
 	setCarouselHeight('#testimonial-carousel');
+	// setCarouselHeight('#supplier-carousel');
 
     function setCarouselHeight(id)
     {
-    	$(id).css('height','auto');
-    	 $(id+' .testimonial-card').each(function()
-        {	
-        	$(this).css('height','auto');
-        });
-        var slideHeight = [];
-        $(id+' .item').each(function()
-        {	
-            // add all slide heights to an array
-            slideHeight.push($(this).height());
-        });
+    	if(id == "#testimonial-carousel"){
+    		$(id).css('height','auto');
+	    	 $(id+' .testimonial-card').each(function()
+	        {	
+	        	$(this).css('height','auto');
+	        });
+	        var slideHeight = [];
+	        $(id+' .item').each(function()
+	        {	
+	            // add all slide heights to an array
+	            slideHeight.push($(this).height());
+	        });
 
-        // find the tallest item
-        max = Math.max.apply(null, slideHeight);
+	        // find the tallest item
+	        max = Math.max.apply(null, slideHeight);
 
-        $(id+' .testimonial-card').each(function()
-        {
-            // add all slide heights to an array
-            $(this).css('height',(max)+'px');
-        });
-        $(id).css('height',(max+50)+'px');
+	        $(id+' .testimonial-card').each(function()
+	        {
+	            // add all slide heights to an array
+	            $(this).css('height',(max)+'px');
+	        });
+	        $(id).css('height',(max+50)+'px');
+    	}
+    	// else{
+    	// 	$(id).css('height','auto');
+	    // 	 $(id+' .testimonial-card').each(function()
+	    //     {	
+	    //     	$(this).css('height','auto');
+	    //     });
+	    //     var slideHeight = [];
+	    //     $(id+' .item').each(function()
+	    //     {	
+	    //         // add all slide heights to an array
+	    //         slideHeight.push($(this).height());
+	    //     });
+	        
+	    //     console.log($('.supplier-content').height());
+	    //     console.log(Math.max.apply(null, slideHeight));
+
+	    //     slideHeight.push($('.supplier-content').height());
+
+	    //     // find the tallest item
+	    //     max = Math.max.apply(null, slideHeight);
+
+	    //     $(id+' .testimonial-card').each(function()
+	    //     {
+	    //         // add all slide heights to an array
+	    //         $(this).css('height',(max)+'px');
+	    //     });
+	    //     $(id).css('height',(max+50)+'px');	
+    	// }
     }
 
 	function myFunction() {

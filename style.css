@@ -1200,14 +1200,14 @@ div .icons{
 }
 
 /* carousel */
-#testimonial-carousel {
+#testimonial-carousel, #supplier-carousel {
   padding-bottom: 30px;
   margin-top: 30px;
   text-align:center;
 }
 
 /* indicator position */
-#testimonial-carousel .carousel-indicators {
+#testimonial-carousel .carousel-indicators, #supplier-carousel .carousel-indicators{
   right: 50%;
   top: auto;
   bottom: -10px;
@@ -1215,12 +1215,12 @@ div .icons{
 }
 
 /* indicator color */
-#testimonial-carousel .carousel-indicators li {
+#testimonial-carousel .carousel-indicators li, #supplier-carousel .carousel-indicators li{
   background: #c0c0c0;
 }
 
 /* active indicator */
-#testimonial-carousel .carousel-indicators .active {
+#testimonial-carousel .carousel-indicators .active, #supplier-carousel .carousel-indicators .active{
   background: #333333;
   height:10px;
   width:10px;
@@ -1248,7 +1248,7 @@ div .icons{
 	text-align: left;
 }
 
-.testimonial-card{
+.testimonial-card, .supplier-card{
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -1265,9 +1265,58 @@ div .icons{
 	padding-left:6%;
 }
 
+
+.supplier-container{
+	display:flex;
+	flex-wrap: wrap;
+	padding:2%;
+}
+
+.supplier-content{
+	padding:2%;
+}
+
+.supplier-icon-container{
+	padding:2%;
+}
+
+.supplier-title{
+	margin-top: 15px;
+	padding-top: 10px;
+	font-family: Lato;
+	font-size: 22px;
+}
+
+.supplier-description{
+	margin-top: 2px;
+}
+
+.supplier-content {
+	border-right: 4px solid #fddc00;
+}
+
+.supplier-icon-container .carousel-inner .item{
+	padding-left:6%;
+}
+
+.supplier-card img{
+	height:100%;
+	width:100%;
+	padding: 2%;
+}
+
+.supplier-contact-us{
+	position: absolute;
+    bottom: 0px;
+    margin-left: 45%;
+}
+
 @media (max-width: 769px){
 	.left-footer{
 		padding:0px;
+	}
+	.supplier-contact-us{
+		position: relative;
 	}
 }
 
@@ -1278,5 +1327,18 @@ div .icons{
 
 	.pic-card-container{
 		display: block;
+	}
+
+	.right-footer{
+		margin-left:28%;
+	}
+
+	#contact-us{
+		width:100%;
+	}
+
+	.supplier-icon-container .carousel-inner, .supplier-icon-container .carousel-inner .item{
+		border-left: none;
+		padding-left: 0px;
 	}
 }

@@ -22,32 +22,99 @@ get_header();
 
 		<div class="container-fluid">
 			
-			<div class="row icons-container">
+			<div class="row supplier-container">
 
-				<div class="col-sm-offset-1 col-sm-2 col-xs-6 text-center icon-container">
-					<img class="icons" src=<?php echo do_shortcode('[themeuri]')."/images/extra_mile.png";?>>
-					<h5 class="icon-title"><b>We go the extra mile</b></h5>
-					<h5 class="icon-description">D&amp;M specializes in customer service.D&amp;M specializes in customer service.D&amp;M specializes in customer service.D&amp;M specializes in customer service.</h5>
+				<div class="col-sm-offset-1 col-sm-3 col-xs-12 supplier-content">
+					<h5 class="supplier-title"><b>Suppliers</b></h5>
+					<h5 class="supplier-description">D&amp;M specializes in customer service.D&amp;M specializes in customer service.D&amp;M specializes in customer service.D&amp;M specializes in customer service.</h5>
+					<a class="btn pull-right supplier-contact-us" id="contact-us" href="#" >Contact Us</a>
 				</div>
-				<div class="col-xs-6 col-sm-2 text-center icon-container">
-					<img class="icons" src=<?php echo do_shortcode('[themeuri]')."/images/one_call.png";?>>
-					<h5 class="icon-title"><b>Just one call</b></h5>
-					<h5 class="icon-description">Access an entire industry with on call to D&amp;M.</h5>
-				</div>
-				<div class="col-xs-6 col-sm-2 text-center icon-container">
-					<img class="icons" src=<?php echo do_shortcode('[themeuri]')."/images/handle_it.png";?>>
-					<h5 class="icon-title"><b>Let us handle it</b></h5>
-					<h5 class="icon-description">An end to trouble tickets and carrier negotiations. D&amp;M manages it all.</h5>
-				</div>
-				<div class="col-xs-6 col-sm-2 text-center icon-container">
-					<img class="icons" src=<?php echo do_shortcode('[themeuri]')."/images/experts.png";?>>
-					<h5 class="icon-title"><b>We are experts</b></h5>
-					<h5 class="icon-description">Experienced industry insiders who advocate for you.</h5>
-				</div>
-				<div class="col-xs-6 col-sm-2 text-center icon-container">
-					<img class="icons" src=<?php echo do_shortcode('[themeuri]')."/images/do_it_fast.png";?>>
-					<h5 class="icon-title"><b>We do it fast</b></h5>
-					<h5 class="icon-description">Resolve supplier &amp; carrier issues three times faster.</h5>
+				<div class="carousel slide col-xs-12 col-sm-8 supplier-icon-container" data-ride="carousel" id="supplier-carousel">
+			      
+					<!-- Bottom Carousel Indicators -->
+					<ol class="carousel-indicators">
+					  <li data-target="#supplier-carousel" data-slide-to="0" class="active"></li>
+					  <li data-target="#supplier-carousel" data-slide-to="1"></li>
+					  <li data-target="#supplier-carousel" data-slide-to="2"></li>
+					</ol>
+			        
+
+					<!-- Carousel Slides / Quotes -->
+					<div class="carousel-inner">
+
+						<!-- Quote 1 -->
+						<div class="item active">
+						    <div class="col-xs-12 testimonial-card supplier-card">
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+							</div>
+						</div>
+
+						<!-- Quote 2 -->
+						<div class="item">
+						    <div class="col-xs-12 testimonial-card supplier-card">
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+						    </div>
+						</div>
+
+						<!-- Quote 3 -->
+						<div class="item">
+						    <div class="col-xs-12 testimonial-card supplier-card">
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+									<div class="col-xs-6 col-sm-4">
+										<img class="img-responsive" src=<?php echo do_shortcode('[themeuri]')."/images/sprint.gif";?>>
+									</div>
+						    </div>
+						</div>
+					  
+					</div>
 				</div>
 			</div>
 
